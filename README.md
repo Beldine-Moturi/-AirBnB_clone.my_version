@@ -1,4 +1,5 @@
-![AirBnB](images/hbnb_logo.png)
+# AirBnB Clone: Final product
+![AirBnB](images/web_static.png)
 
 # AirBnB Clone
 **AirBnB** is a *complete web application*, integrating database storage, a back-end API, and front-end interface.
