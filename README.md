@@ -95,4 +95,3 @@ This repository contains the following files:
 
 ## Authors
 - Beldine Moturi | [Linkedin](https://www.linkedin.com/in/beldine-moturi-00811615a/)
-- Goodness Atunde | [Github](https://github.com/goody-1)
