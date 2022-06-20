@@ -8,8 +8,7 @@ The goal of this project is to deploy on our server a simple copy of the [AirBnB
 ![Structure](images/AirBnB_structure.png)
 
 ## The Console - Command interpreter
-The console is the first step towards building the full Web application. The Console is our command interpreter that will manage
-our AirBnB projects - Like a shell in Unix-like systems but limited to a specific use case;  in our case, that is managing the objects of our project i.e:
+The Console is the command interpreter that manages our AirBnB objects - Like a shell in Unix-like systems but limited to a specific use case;  in this case, that is managing the objects of this project i.e:
 - Create a new object (ex: a new User or a new Place)
 - Retrieve an object from a file, a database etc…
 - Do operations on objects (count, compute stats, etc…)
@@ -69,7 +68,7 @@ beldine@ubuntu:~$
 ```
 The `console` can `create`, `destroy`, and `update` objects. Type `help` within the console to get a list of command options and its function.
 
-### Objects Implemented
+### File Descriptions
 This repository contains the following files:
 
 | Folder | File | Description |
@@ -77,20 +76,27 @@ This repository contains the following files:
 | tests |  | Contains test files for AirBnb Clone |
 |  | console.py | Command line Interpreter for managing AirBnB objects |
 | models | base_model.py | Defines all common attributes/methods for other classes |
-| models | amenity.py | Creates class `amenity` |
-| models | city.py | Creates class `city` |
-| models | place.py | Creates class `place` |
-| models | review.py | Creates class `review` |
-| models | state.py | Creates class `state` |
-| models | user.py | Creates class `user` |
-| models/engine/ | file_storage.py | Serializes instances to a JSON file and deserializes JSON file to instances |
-| web_static | | Contains the static, front-end implementation of the AirBnB project
+| models | * | Define all other objects used in this project |
+| models/engine | file_storage.py | Implements JSON file storage for the objects |
+| models/engine | db_storage.py | Defines methods that interact with mysql database for storing data |
+| api | * | Exposes the data in our storage via an API |
+| web_framework/* | * | Contains the html, css and javascript files the web interface |
+| web_framework | hbnb.py |  Starts a Flask web application for the project |
+|  | setup_mysql_dev.sql | sets us the mysql database |
 | To be updated |
 
 
+## To be Implemented..
+1. Deploying the app on a server
+2. Update README file with a Demo of the web user interface
+
+## Bugs
+No Known bugs at this time
+
 ## Technologies used
-- Language: python, HTML, CSS, Bash
-- Operating system: Ubuntu 20.04
+- Languages: python, HTML, CSS, Javascript, sql, Bash
+- Frameworks: Flask, flasgger, flask_sqlalchemy, Flask-CORS, JQuery, RESTful API
+- Operating system: This project is interpreted/tested on Ubuntu 14.04 LTS using python3
 - style: Pycodestyle
 - Version control: Git
 
